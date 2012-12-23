@@ -72,6 +72,25 @@ var App = App || {};
   }
 
   Template.rsvp_add.events = {
+    'click tr input': function (e) {
+      var row = $(e.target).parent().parent().parent();
+      var id = row.data('id');
+      console.log('test');
+      Guests.update({
+        _id: id
+      }, {
+        $set: {
+          invite: {
+            ceremonie: row.find('input[name="invite_ceremonie"]').is(':checked'),
+            diner: row.find('input[name="invite_diner"]').is(':checked'),
+            feest: row.find('input[name="invite_feest"]').is(':checked')
+          }
+        }
+      }, function (error) {
+        console.log( 'Saved');
+      })
+      Meteor.flush();
+    },
     'click #add-btn': function (e) {
       e.preventDefault();
       Guests.insert({

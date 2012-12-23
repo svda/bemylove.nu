@@ -84,12 +84,21 @@
 						<div class="control-group">
 							<label  class="control-label">Wil je aangeven of je komt?</label>
 							<div class="controls">
-								<label class="checkbox">
-									<input type="checkbox" name="ceremonie" value="true"{{#if guest.reply.ceremonie}} checked="checked"{{/if}} /> Ja, ik kom naar de ceremonie
-								</label>
-								<label class="checkbox">
-									<input type="checkbox" name="feest" value="true"{{#if guest.reply.feest}} checked="checked"{{/if}} /> Ja, ik kom naar het feest
-								</label>
+								{{#if guest.invite.ceremonie}}
+									<label class="checkbox">
+										<input type="checkbox" name="ceremonie" value="true"{{#if guest.reply.ceremonie}} checked="checked"{{/if}} /> Ja, ik kom naar de ceremonie
+									</label>
+								{{/if}}
+								{{#if guest.invite.diner}}
+									<label class="checkbox">
+										<input type="checkbox" name="diner" value="true"{{#if guest.reply.diner}} checked="checked"{{/if}} /> Ja, ik kom naar het diner
+									</label>
+								{{/if}}
+								{{#if guest.invite.feest}}
+									<label class="checkbox">
+										<input type="checkbox" name="feest" value="true"{{#if guest.reply.feest}} checked="checked"{{/if}} /> Ja, ik kom naar het feest
+									</label>
+								{{/if}}
 							</div>
 						</div>
 						<div class="control-group">
@@ -127,7 +136,7 @@
 			{{/if}}
 		{{/if}}
 
-		{{!> rsvp_add}}
+		{{> rsvp_add}}
 
 	</div>
 </template>
@@ -144,16 +153,22 @@
 		<h2>Gastenlijst</h2>
 		<table>
 		{{#each guests}}
-			<tr>
+			<tr data-id="{{_id}}">
 				<td>{{name}}</td>
 				<td>{{zipcode}}</td>
 				<td>{{number}}</td>
 				<td>{{n}}</td>
 				<td>
+					{{#with invite}}
+						<label><input type="checkbox" name="invite_ceremonie" value="true"{{#if ceremonie}} checked="checked"{{/if}} /> Ceremonie</label>
+						<label><input type="checkbox" name="invite_diner" value="true"{{#if diner}} checked="checked"{{/if}} /> Diner</label>
+						<label><input type="checkbox" name="invite_feest" value="true"{{#if feest}} checked="checked"{{/if}} /> Feest</label>
+					{{/with}}
+				<td>
 					{{#with reply}}
-						{{#if feest}}feest {{/if}}
 						{{#if ceremonie}}ceremonie {{/if}}
-						{{#if taart}}taart {{/if}}
+						{{#if diner}}diner {{/if}}
+						{{#if feest}}feest {{/if}}
 					{{/with}}
 				</td>
 			</tr>
