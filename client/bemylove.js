@@ -2,32 +2,6 @@ var App = App || {};
 
 (function() {
 
-  App.Guests = {
-
-    updateReply: function (properties) {
-      var guest = App.Session.get('guest');
-      Guests.update({ _id: guest._id }, { $set: {
-        replied: true,
-        reply: properties
-      } }, function (error) {
-        if(error)
-          console.log(error);
-      });
-    },
-
-    searchGuest: function (properties) {
-      if(_.keys(properties).length) // We need this because otherwise the first row will be returned.
-        return Guests.findOne(properties);
-      return false;
-    },
-
-    persistGuest: function (guest) {
-      $.cookie( 'guest_id', guest._id );
-      App.Session.set('guest', guest);
-    }
-
-  };
-
   Template.main.state = function () {
     return App.Session.state();
   }
@@ -41,9 +15,9 @@ var App = App || {};
       e.preventDefault();
       var zipcode = $('#zipcode-input').val().toUpperCase();
       var number = $('#number-input').val();
-      var guest = App.Guests.searchGuest({ zipcode: zipcode, number: number });
+      var guest = Guests.searchGuest({ zipcode: zipcode, number: number });
       if(guest)
-        App.Guests.persistGuest(guest);
+        Guests.persistGuest(guest);
       else {
         App.Session.set('identify_error', 'Sorry, geen gasten met deze gegevens gevonden. Wil je de postcode zonder spaties invullen, en het huisnummer zonder toevoegingen?');
       }
@@ -54,7 +28,7 @@ var App = App || {};
       var feest = $('input[name="feest"]').is(':checked');
       //var taart = $('input[name="taart"]:checked').val();
       var taart = false;
-      App.Guests.updateReply({
+      Guests.updateReply({
         ceremonie: ceremonie,
         feest: feest,
         taart: taart

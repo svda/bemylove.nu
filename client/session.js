@@ -59,7 +59,7 @@ var App = App || {};
     Meteor.autorun(function () {
       var guestId = $.cookie('guest_id');
       if(guestId) {
-        var guest = App.Guests.searchGuest({ _id: guestId });
+        var guest = Guests.searchGuest({ _id: guestId });
         App.Session.set('guest', guest);
         console.log(guest);
       }
