@@ -163,14 +163,7 @@
 
 <template name="admin">
 	<div class="container">
-		<h1>Beheer</h1>
-		<div id="add-form">
-			<input type="text" name="name" placeholder="Naam" />
-			<input type="text" name="zipcode" placeholder="Postcode zonder spaties" />
-			<input type="text" name="number" placeholder="Huisnummer zonder toevoegingen" />
-			<input type="text" name="n" placeholder="Aantal personen" />
-			<button id="add-btn">Toevoegen</button>
-		</div>
+		<h1>Beheer gastenlijst</h1>
 		<div id="guestlist">
 			<h2>Gastenlijst</h2>
 			<table>
@@ -204,6 +197,13 @@
 				</tr>
 			{{/each}}
 			</table>
+		</div>
+		<div id="add-form">
+			<input type="text" name="name" placeholder="Naam" />
+			<input type="text" name="zipcode" placeholder="Postcode zonder spaties" />
+			<input type="text" name="number" placeholder="Huisnummer zonder toevoegingen" />
+			<input type="text" name="n" placeholder="Aantal personen" /><br />
+			<button id="add-btn" class="btn">Toevoegen</button>
 		</div>
 	</div>
 </template>

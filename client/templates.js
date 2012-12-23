@@ -78,7 +78,6 @@ var App = App || {};
     'click tr input': function (e) {
       var row = $(e.target).parent().parent().parent();
       var id = row.data('id');
-      console.log('test');
       Guests.update({
         _id: id
       }, {
@@ -90,7 +89,8 @@ var App = App || {};
           }
         }
       }, function (error) {
-        console.log( 'Saved');
+        if(error)
+          console.log(error);
       })
       Meteor.flush();
     },
