@@ -7,7 +7,6 @@
 </body>
 
 <template name="main">
-	{{!> navbar}}
 	<section id="home">
 		{{> home}}
 	</section>
@@ -41,32 +40,9 @@
 		</div>
 	</section>
 	{{/if}}
-	<footer></footer>
-</template>
-
-<template name="navbar">
-	<div class="navbar navbar-fixed-top navbar-inverse">
-		<div class="navbar-inner">
-			<div class="container">
-				<div class="nav-collapse collapse">
-					<ul id="main-nav" class="nav">
-						<li><a href="#rsvp">RSVP</a></li>
-						{{#if guest.reply.ceremonie}}
-							<li><a href="#ceremonie">Ceremonie</a></li>
-						{{/if}}
-						{{#if guest.reply.feest}}
-							<li><a href="#feest">Feest</a></li>
-						{{/if}}
-						<li></li>
-						<li></li>
-					</ul>
-					<ul class="nav pull-right">
-						<li><a href="#profile">{{#if guest}}{{guest.name}}{{/if}}</a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-	</div>
+	<footer>
+		{{!> logs_bootstrap}}
+	</footer>
 </template>
 
 <template name="home">
@@ -89,16 +65,59 @@
 			<h1>RSVP</h1>
 		</div>
 		{{#if saved}}
-			<p>Super, bedankt voor het invullen en hopelijk tot de 19e!</p>
+			<p>Super, bedankt voor het invullen en hopelijk tot de 19e {{guest.name}}!</p>
+			<button id="edit-reply-btn" class="btn">Aanpassen</button>
 		{{else}}
 			{{#if replied}}
-				<p>We hebben je RSVP al ontvangen, klik op Aanpassen om deze te veranderen.</p>
+			<p>Hallo {{guest.name}},</p>
+				<p>We hebben de RSVP al ontvangen, klik op Aanpassen om deze te veranderen.</p>
 				<button id="edit-reply-btn" class="btn">Aanpassen</button>
 			{{else}}
 				{{#if guest}}
-					{{> rsvp_reply}}
+					<div id="reply-form">
+						<p>Hallo {{guest.name}}!</p>
+						<div class="control-group">
+							<label  class="control-label">Wil je aangeven of je komt?</label>
+							<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox" name="ceremonie" value="true"{{#if guest.reply.ceremonie}} checked="checked"{{/if}} /> Ja, ik kom naar de ceremonie
+								</label>
+								<label class="checkbox">
+									<input type="checkbox" name="feest" value="true"{{#if guest.reply.feest}} checked="checked"{{/if}} /> Ja, ik kom naar het feest
+								</label>
+							</div>
+						</div>
+						<div class="control-group">
+							<label  class="control-label">Met hoeveel personen?</label>
+							<div class="controls">
+								<label>
+									<select name="ceremonie" class="span1">
+										{{# each aantal}}
+										<option value="{{aantal}}">{{this}}</option>
+										{{/each}}
+									</select>
+								</label>
+							</div>
+						</div>
+						<div class="control-group">
+								<button id="reply-btn" class="btn btn-primary">Versturen</button>
+							</div>
+						</div>
+					</div>
 				{{else}}
-					{{> rsvp_identify}}
+					<div id="identify-form">
+						<div id="zipcode-control" class="control-group{{#if error}} error{{/if}}">
+							<label for="" class="control-label">Vul je postcode en huisnummer in om te beginnen</label>
+							<div class="controls">
+								<input type="text" id="zipcode-input" class="span2" placeholder="Postcode" />
+								<input type="text" id="number-input" class="span1" placeholder="Nr." />
+								{{#if error}}
+									<span class="help-inline">{{error}}</span>
+								{{/if}}
+							</div>
+						</div>
+							<button id="identify-btn" class="btn btn-primary">Versturen</button>
+					</div>
 				{{/if}}
 			{{/if}}
 		{{/if}}
@@ -149,60 +168,3 @@
 	</div>
 </template>
 
-<template name="rsvp_identify">
-	<div id="identify-form">
-		<div id="zipcode-control" class="control-group{{#if error}} error{{/if}}">
-			<label for="" class="control-label">Vul je postcode en huisnummer in om te beginnen</label>
-			<div class="controls">
-				<input type="text" id="zipcode-input" class="span2" placeholder="Postcode" />
-				<input type="text" id="number-input" class="span1" placeholder="Nr." />
-				{{#if error}}
-					<span class="help-inline">{{error}}</span>
-				{{/if}}
-			</div>
-		</div>
-			<button id="identify-btn" class="btn btn-primary">Versturen</button>
-	</div>
-</template>
-
-<template name="rsvp_reply">
-	<div id="reply-form">
-		<p>Hallo {{guest.name}}!</p>
-		<div class="control-group">
-			<label  class="control-label">Wil je aangeven of je komt?</label>
-			<div class="controls">
-				<label class="checkbox">
-					<input type="checkbox" name="ceremonie" value="true"{{#if guest.reply.ceremonie}} checked="checked"{{/if}} /> Ja, ik kom naar de ceremonie
-				</label>
-				<label class="checkbox">
-					<input type="checkbox" name="feest" value="true"{{#if guest.reply.feest}} checked="checked"{{/if}} /> Ja, ik kom naar het feest
-				</label>
-			</div>
-		</div>
-		<div class="control-group">
-			<label  class="control-label">Met hoeveel personen?</label>
-			<div class="controls">
-				<label>
-					<select name="ceremonie" class="span1">
-						{{# each aantal}}
-						<option value="{{aantal}}">{{this}}</option>
-						{{/each}}
-					</select>
-				</label>
-			</div>
-		</div>
-		<div class="control-group">
-			<label for="" class="control-label">Ben je van plan om een taart te bakken en mee te nemen?</label>
-			<div class="controls">
-				<label class="radio">
-					<input type="radio" name="taart" value="" checked="checked" /> Nee
-				</label>
-				<label class="radio">
-					<input type="radio" name="taart" value="true"{{#if guest.reply.taart}} checked="checked"{{/if}} /> Ja, en ik beloof plechtig om er geen geestverruimende middelen van enig soort in te doen
-				</label>
-
-				<button id="reply-btn" class="btn btn-primary">Versturen</button>
-			</div>
-		</div>
-	</div>
-</template>
