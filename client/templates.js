@@ -24,8 +24,9 @@ var App = App || {};
     },
     'click #reply-btn': function (e) {
       e.preventDefault();
-      var ceremonie = $('input[name="ceremonie"]').is(':checked');
-      var feest = $('input[name="feest"]').is(':checked');
+      var ceremonie = $('input[name="reply_ceremonie"]').is(':checked');
+      var diner = $('input[name="reply_diner"]').is(':checked');
+      var feest = $('input[name="reply_feest"]').is(':checked');
       //var taart = $('input[name="taart"]:checked').val();
       var taart = false;
       Guests.updateReply({
