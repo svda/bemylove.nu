@@ -2,8 +2,8 @@ var App = App || {};
 
 (function() {
 
-  Template.main.state = function () {
-    return App.Session.state();
+  Template.main.admin = function () {
+    return App.Session.state() == 'admin';
   }
 
   Template.main.guest = Template.rsvp.guest = function () {
@@ -36,6 +36,7 @@ var App = App || {};
         taart: taart
       });
       App.Session.state('rsvp_saved');
+      Meteor.flush();
     },
     'click #zipcode-input': function (e) {
       App.Session.set('identify_error', null);
@@ -69,11 +70,11 @@ var App = App || {};
     return n;
   };
 
-  Template.rsvp_add.guests = function () {
+  Template.admin.guests = function () {
     return Guests.find();
   }
 
-  Template.rsvp_add.events = {
+  Template.admin.events = {
     'click tr input': function (e) {
       var row = $(e.target).parent().parent().parent();
       var id = row.data('id');

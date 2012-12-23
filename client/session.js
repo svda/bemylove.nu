@@ -5,7 +5,8 @@ var App = App || {};
   var VALID_STATES = [
     'identify',
     'rsvp_reply',
-    'rsvp_saved'
+    'rsvp_saved',
+    'admin'
   ];
 
   var VALID_KEYS = [
