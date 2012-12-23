@@ -1,0 +1,470 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fff",
+				"ffffff"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"git co",
+				"Git: Commit history"
+			],
+			[
+				"git",
+				"Git: Commit history"
+			],
+			[
+				"git ",
+				"Git: Gui"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/javascript/init.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/imagemap.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/parts/imagemap.tpl",
+		"/usr/local/var/www/olvg.nl/settings/override/site.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/classes.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/content/datatype/view/ezxmltags/cookiesettings.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/content.less",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/panel/agenda.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/panel/frontpage/news.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/bootstrap.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/content/datatype/collect/ezemail.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/content/datatype/collect/ezstring.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/pagelayout.less",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/menu.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/content/datatype/collect/ezoption.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/javascript/prescription_form.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/settings/override.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/override/templates/full/prescription_form.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/stylesheets/prescription_form.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/override/templates/collectedinfo/prescription_form.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/override/templates/collectedinfomail/prescription_form.tpl",
+		"/Users/sander/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/autoloads/myxtjsonoperators.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/autoloads/eztemplateautoload.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/settings/siteaccess/myxt_site/override.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/autoloads/myxtfuncoperator.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/javascript/prescription_form.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/prescription_form.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/collectedinfo/prescription_form.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookiecare/jquery.cookiecare.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/javascript/global.ui.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg/settings/content.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/settings/content.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/content/datatype/view/ezxmltags/cookiesettings.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookiecare/jquery.cookiecare.css",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/page_footer.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/settings/dashboard.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg/settings/site.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/agenda.tpl",
+		"/Users/sander/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/sander/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/content/datatype/collect/eztext.tpl",
+		"/usr/local/var/www/olvg.nl/extension/ezjscore/settings/ezjscore.ini",
+		"/usr/local/var/www/olvg.nl/extension/ezjscore/design/standard/javascript/jquery-ui-1.8.18.custom.min.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/menu/topmenu.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/responsive.less",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/variables.less",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/voorpagina/homepage.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/menu/shortcutmenu.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/banner.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/header.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/search.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/pagelayout/header.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets/global.content.less",
+		"/usr/local/var/www/olvg.nl/extension/olvg/settings/image.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/masthead.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/parts/frontpage/news.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/parts/feed/twitter.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/translations/dut-NL/translation.ts",
+		"/usr/local/var/www/olvg.nl/.htaccess",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/box.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/javascript/global.init.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/pagelayout/page_banner.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/templates/node/view/vcard.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/templates/node/view/group.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/stylesheets/healthcare.employees.css",
+		"/usr/local/var/www/olvg.nl/extension/olvg_forms/design/standard/templates/formulier/radiologie_cd.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/aandoening.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets/core.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets/global.pagelayout.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/override/templates/full/employee.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg/settings/siteaccess/olvg_nl/design.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/node/view/full/footer.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/pagelayout/head_script.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/settings/design.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookiecare/jquery.cookieguard.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookiecare/jquery.cookieguard.css",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/design/kindersite/stylesheets/kindersite.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/design/standard/override/templates/full/employeefolder.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/line/nieuwsbericht.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/nieuwsbericht.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/modal/flash.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/navigator/alpha.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/translations/untranslated/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/translations/dut-NL/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/settings/siteaccess/kindersite_nl/site.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/line/pagina.tpl",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/listitem/nieuwsbericht.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/datatypes/sckenhancedselection/sckenhancedselectiontype.php",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/listitem/event.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/autoloads/myxtsmartshortenoperator.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_healthcare/translations/untranslated/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/templates/menu/secondary_menu.tpl",
+		"/usr/local/var/www/olvg.nl/extension/ezfind/translations/untranslated/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/ezsurvey/translations/untranslated/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/ezsurvey/translations/dut-NL/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/parts/feedback.tpl",
+		"/usr/local/var/www/olvg.nl/extension/ezfind/translations/dut-NL/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/eztags/translations/untranslated/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/eztags/translations/dut-NL/translation.ts",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/line/poll.tpl",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/settings/siteaccess/kindersite_nl/upload.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/settings/siteaccess/kindersite_nl/content.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/settings/siteaccess/kindersite_nl/design.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/kindersite/settings/site.ini.append.php",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookieguard/jquery.cookieguard.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookieguard/jquery.cookieguard.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookieguard/README",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookieguard/LICENSE",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/css/jquery.cookieguard.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/js/jquery.cookieguard.js",
+		"/usr/local/var/www/olvg.nl/extension/ezchangeclass/README",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/embed/pagina_afdelingen.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/parts/thumbnail.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/override/templates/datatype/view/ezimage/thumbnail.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/node/view/thumbnail.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets/global.thumbnail.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets/bootstrap.less",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/javascript/global.modal.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/templates/node/view/modal.tpl",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/css/jquery.cookiecomply.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/js/jquery.cookiecomply.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/js/jquery.cookiecuttr.js",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/css/jquery.cookiecuttr.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/css/jquery.cookie-consent.css",
+		"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery/js/jquery.cookie-consent.js",
+		"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/override/templates/full/map.tpl"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/usr/local/var/www/olvg.nl/extension/ezie",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global/design/standard/lib/jquery-cookiecare",
+			"<project>",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design",
+			"/usr/local/var/www/olvg.nl/extension",
+			"/usr/local/var/www/olvg.nl/extension/objectrelationbrowse",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"<project>,*.css,*.less",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets,*.css,*.less",
+			"<project>",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global",
+			"/usr/local/var/www/olvg.nl/extension/olvg_design/design/olvg/stylesheets",
+			"/usr/local/var/www/olvg.nl/extension, *.less",
+			"/usr/local/var/www/olvg.nl/extension",
+			"/usr/local/var/www/olvg.nl/extension/myxt_global/design/myxt/stylesheets",
+			"/usr/local/var/www/meteor/master/packages/c2o-base,/usr/local/var/www/meteor/master/packages/c2o-blog,/usr/local/var/www/meteor/master/packages/c2o-content,/usr/local/var/www/meteor/master/packages/c2o-user",
+			"/usr/local/var/www/meteor/click2open.nl",
+			"/usr/local/var/www/meteor/click2open.nl/client"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"panel",
+			"spotli",
+			"presc",
+			"prescription",
+			"popu",
+			"consoe",
+			"denyAll",
+			"approveAll",
+			"$(",
+			"setCook",
+			"icon",
+			"collapsi",
+			"1.8.23",
+			"banner",
+			"intera",
+			"580",
+			"banner",
+			"intera",
+			"selected",
+			"banner-ca",
+			"frontp",
+			"tabs",
+			"employee",
+			"}\n",
+			"alphana",
+			"alpha",
+			"publicatie",
+			"cg",
+			"cg-",
+			"'content', 'class'",
+			"class_id",
+			"navigationp",
+			"navigation",
+			"ezi18n(",
+			"ezi18n",
+			"ezi18n(",
+			"bekkenbodemcentrum",
+			"$",
+			"approve",
+			"updateI",
+			"se",
+			"setCo",
+			"approve",
+			".thumbnail .caption",
+			"caption",
+			"CookieGuard.",
+			"approved:",
+			".approved",
+			"cc.cookies",
+			"execu",
+			"cc.cookie",
+			"url",
+			"\"lin",
+			"_string",
+			"content-f",
+			"shadow",
+			"box",
+			"infobox",
+			"banner",
+			"470",
+			"-position",
+			"content-po",
+			"-position",
+			"#path",
+			"#page",
+			"caption",
+			"<?php\n\nclass MyxtInformationCollectionOperators\n{\n\n    function operatorList()\n    {\n        return array( 'collectedinfo' );\n    }\n\n    function namedParameterPerOperator()\n    {\n        return true;\n    }\n\n    function namedParameterList()\n    {\n        return array( 'collectedinfo' => array( 'operation' => array( 'type' => 'string',\n                                                                      'required' => true,\n                                                                      'default' => 'remove' ),\n                                                'collection_id' => array( 'type' => 'string',\n                                                                          'required' => true,\n                                                                          'default' => false ) ) );\n    }\n\n    function modify( $tpl, $operatorName, $operatorParameters, $rootNamespace, $currentNamespace, &$operatorValue, $namedParameters )\n    {\n        switch( $operatorName )\n        {\n            case 'collectedinfo':\n\n                switch( $namedParameters['operation'] )\n                {\n                    case 'remove':\n                        eZInformationCollection::removeCollection( $namedParameters['collection_id'] );\n                        $operatorvalue = true;\n                        break;\n                }\n                break;\n        }\n\n    }\n}\n\n?>\n<?php\n\nclass MyxtInformationCollectionOperators\n{\n\n    function operatorList()\n    {\n        return array( 'collectedinfo' );\n    }\n\n    function namedParameterPerOperator()\n    {\n        return true;\n    }\n\n    function namedParameterList()\n    {\n        return array( 'collectedinfo' => array( 'operation' => array( 'type' => 'string',\n                                                                      'required' => true,\n                                                                      'default' => 'remove' ),\n                                                'collection_id' => array( 'type' => 'string',\n                                                                          'required' => true,\n                                                                          'default' => false ) ) );\n    }\n\n    function modify( $tpl, $operatorName, $operatorParameters, $rootNamespace, $currentNamespace, &$operatorValue, $namedParameters )\n    {\n        switch( $operatorName )\n        {\n            case 'collectedinfo':\n\n                switch( $namedParameters['operation'] )\n                {\n                    case 'remove':\n                        eZInformationCollection::removeCollection( $namedParameters['collection_id'] );\n                        $operatorvalue = true;\n                        break;\n                }\n                break;\n        }\n\n    }\n}\n\n?>\n$can_view_contactinfo",
+			"nevenf",
+			"verwijze",
+			"15px",
+			"subitems",
+			"kaderblauw",
+			".subitems",
+			"twitter",
+			"LoginPage=",
+			"entree",
+			"modal-body",
+			"subi",
+			".subitems li",
+			".subitems",
+			"feedcontainer",
+			"front",
+			"frontpage",
+			"@blueLight",
+			"path",
+			"grid-",
+			"ctive",
+			"modal-body",
+			"div.content-view-full div.attribute-description",
+			"attribute-description",
+			"attribute-de",
+			"description",
+			".topmenu",
+			"topmen",
+			"wrapper",
+			"position",
+			"topmenu",
+			"page",
+			"header",
+			"path",
+			"path-design",
+			"path",
+			"#topmenu-design",
+			"columns-",
+			"thumb",
+			"popup",
+			"emplo",
+			"url_para",
+			"$counter",
+			"count",
+			"$department_node_id",
+			"departme",
+			"$department_no",
+			"$department_id",
+			"$attribuut",
+			"$filters",
+			"$collection",
+			"$root_node",
+			"alpha.tpl",
+			"extra_menu_class",
+			"extra_menu",
+			"$contentobject_attribute",
+			"poll",
+			" </",
+			"debug",
+			"store",
+			".modal",
+			"|attri"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"cc-",
+			"ezpI18n::tr(",
+			"",
+			"c2oSession"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 66.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"css",
+				".meteor/local/build/server/node_modules/less/lib/less/cssmin.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/sander/var/www/prodemos.nl/prodemos.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true
+}

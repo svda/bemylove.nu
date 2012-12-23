@@ -3,22 +3,157 @@
 </head>
 
 <body>
-  {{> home}}
+  {{> main}}
 </body>
 
-<template name="home">
-	<header></header>
-	<div id="singleton" class="container">
-		<div class="row">
-			<div id="masthead" class="span12">
-				
-			</div>
-			<Div id="construction">
-				<h1>soon in a theater near you!</h1>
-				<h2>(meer info volgt)</h2>
+<template name="main">
+	{{> navbar}}
+	<section id="home">
+		{{> home}}
+	</section>
+	<section id="construction">
+		<h1>soon in a theater near you!</h1>
+		<h2>(meer info volgt)</h2>
+	</section>
+	<section id="rsvp">
+		{{> rsvp}}
+	</section>
+	{{#if guest.reply.feest}}
+	<section id="feest">
+		{{> feest}}
+	</section>
+	{{/if}}
+	{{#if guest.reply.ceremonie}}
+	<section id="ceremonie">
+		{{> ceremonie}}
+	</section>
+	{{/if}}
+	<footer></footer>
+</template>
+
+<template name="navbar">
+	<div class="navbar navbar-fixed-top navbar-inverse">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="nav-collapse collapse">
+					<ul id="main-nav" class="nav">
+						<li><a href="#rsvp">RSVP</a></li>
+						{{#if guest.reply.ceremonie}}
+							<li><a href="#ceremonie">Ceremonie</a></li>
+						{{/if}}
+						{{#if guest.reply.feest}}
+							<li><a href="#feest">Feest</a></li>
+						{{/if}}
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="nav pull-right">
+						<li><a href="#profile">{{#if guest}}{{guest.name}}{{/if}}</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-
 	</div>
-	<footer></footer>
+</template>
+
+<template name="home">
+	<div class="container">
+		<p>Als je hier bent voor de bruiloft van Sander en Janneke dan zit je goed! Zo niet, dan ben je waarschijnlijk op zoek naar <a href"http://www.bemylove.nl" target="_blank">bemylove.nl</a></p>
+		<div class="row">
+			<div id="masthead" class="span12"></div>
+		</div>
+	</div>
+</template>
+
+<template name="rsvp">
+	<div class="container">
+		<div class="page-head">
+			<h1>RSVP</h1>
+		</div>
+		{{#if replied}}
+			<button id="edit-reply-btn" class="btn">Aanpassen</button>
+		{{else}}
+			{{#if saved}}
+				<p>Super, bedankt voor het invullen en hopelijk tot de 19e!</p>
+			{{else}}
+				{{#if guest}}
+					{{> rsvp_reply}}
+				{{else}}
+					{{> rsvp_identify}}
+				{{/if}}
+			{{/if}}
+		{{/if}}
+	</div>
+</template>
+
+<template name="rsvp_identify">
+	<div id="identify-form">
+		<div id="zipcode-control" class="control-group{{#if error}} error{{/if}}">
+			<label for="" class="control-label">Vul je postcode en huisnummer in</label>
+			<div class="controls">
+				<input type="text" id="zipcode-input" class="span2" placeholder="Postcode" />
+				<input type="text" id="number-input" class="span1" placeholder="Huisnummer" />
+				{{#if error}}
+					<span class="help-inline">{{error}}</span>
+				{{/if}}
+			</div>
+		</div>
+			<button id="identify-btn" class="btn btn-primary">Versturen</button>
+	</div>
+</template>
+
+<template name="rsvp_reply">
+	<div id="reply-form">
+		<p>Hallo {{guest.name}}!</p>
+		<div class="control-group">
+			<label  class="control-label">Wil je aangeven of je komt?</label>
+			<div class="controls">
+				<label class="checkbox">
+					<input type="checkbox" name="ceremonie" value="true"{{#if guest.reply.ceremonie}} checked="checked"{{/if}} /> Ja, ik kom naar de ceremonie
+				</label>
+				<label class="checkbox">
+					<input type="checkbox" name="feest" value="true"{{#if guest.reply.feest}} checked="checked"{{/if}} /> Ja, ik kom naar het feest
+				</label>
+			</div>
+		</div>
+		<div class="control-group">
+			<label  class="control-label">Met hoeveel personen?</label>
+			<div class="controls">
+				<label>
+					<select name="ceremonie" class="span1">
+						{{# each aantal}}
+						<option value="{{aantal}}">{{this}}</option>
+						{{/each}}
+					</select>
+				</label>
+			</div>
+		</div>
+		<div class="control-group">
+			<label for="" class="control-label">Ben je van plan om een taart te bakken en mee te nemen?</label>
+			<div class="controls">
+				<label class="radio">
+					<input type="radio" name="taart" value="" checked="checked" /> Nee
+				</label>
+				<label class="radio">
+					<input type="radio" name="taart" value="true"{{#if guest.reply.taart}} checked="checked"{{/if}} /> Ja, en ik beloof plechtig om er geen geestverruimende middelen van enig soort in te doen
+				</label>
+
+				<button id="reply-btn" class="btn btn-primary">Versturen</button>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="ceremonie">
+	<div class="container">
+		<h1>Ceremonie</h1>
+		<p>Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</o>
+	</div>
+</template>
+
+<template name="feest">
+	<div class="container">
+		<h1>Feest</h1>
+		<p>Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>
+	</div>
 </template>

@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/Users/sander/var/www/meteor/bemylove.nu"
+		},
+		{
+			"path": "/Users/sander/var/www/meteor/master/packages"
 		}
 	]
 }
