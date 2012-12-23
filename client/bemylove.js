@@ -30,13 +30,6 @@ var App = App || {};
     return Session.get('state');
   }
 
-  Template.navbar.user_name = function () {
-    var guest = App.State.get('guest');
-      if(guest)
-        return guest.name;
-      return false;
-  }
-
   Template.rsvp.saved = function () {
     return App.State.equals('state', 'rsvp_saved');
   }
@@ -46,16 +39,25 @@ var App = App || {};
   };
 
   Template.rsvp.replied = function () {
+    if(App.State.get('state') == 'rsvp_reply' || App.State.get('state') == 'rsvp_saved')
+      return false;
+
     var guest = App.State.get('guest');
     if(guest)
       return guest.replied;
     return false;
   }
 
+  Template.rsvp.events = {
+    'click #edit-reply-btn': function (e) {
+      App.State.set('state', 'rsvp_reply');
+    }
+  }
+
   Template.rsvp_identify.events = {
     'click #identify-btn': function (e) {
       e.preventDefault();
-      var zipcode = $('#zipcode-input').val();
+      var zipcode = $('#zipcode-input').val().toUpperCase();
       var number = $('#number-input').val();
       var guest = App.Guests.searchGuest({ zipcode: zipcode, number: number });
       if(guest)
@@ -64,7 +66,7 @@ var App = App || {};
         $.cookie( 'guest_id', guest._id );
       }
       else
-        Session.set('identify_error', 'Sorry, geen gasten met deze gegevens gevonden.');
+        Session.set('identify_error', 'Sorry, geen gasten met deze gegevens gevonden. Wil je de postcode zonder spaties invullen, en het huisnummer zonder toevoegingen?');
     }
   };
 
@@ -83,6 +85,7 @@ var App = App || {};
         feest: Boolean(feest),
         taart: Boolean(taart)
       });
+      App.State.set('state', 'rsvp_replied');
     },
     'click #zipcode-input': function (e) {
       Session.set('reply_error', null);
@@ -97,5 +100,31 @@ var App = App || {};
     }
     return n;
   };
+
+  Template.rsvp_add.guests = function () {
+    return Guests.find();
+  }
+
+  Template.rsvp_add.events = {
+    'click #add-btn': function (e) {
+      e.preventDefault();
+      Guests.insert({
+        name: $('input[name="name"]').val(),
+        zipcode: $('input[name="zipcode"]').val(),
+        number: $('input[name="number"]').val(),
+        n: $('input[name="n"]').val()
+      }, function (error) {
+        console.log(error);
+      });
+      $('#add-form input').val('');
+    }
+  }
+
+  Handlebars.registerHelper("state", function(state) {
+    if (optionalValue) {
+      console.log("Value");
+      console.log(optionalValue);
+    }
+  });
 
 })();

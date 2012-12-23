@@ -15,18 +15,7 @@ Meteor.startup(function () {
         'n': '1',
         'postcode': '1060RE',
         'huisnummer': '137'
-      }, {
-        'name': 'Opa en Oma Sterrenburg',
-        'n': '2',
-        'postcode': '3372DC',
-        'huisnummer': '16'
-      }, {
-        name: 'Truus en Willem Verschoor ',
-        n: '2',
-        postcode: '3904EP',
-        huisnummer: '53'
-      }
-      ];
+      }];
 
     for (var i = 0; i < items.length; i++)
       Guests.insert({

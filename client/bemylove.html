@@ -7,7 +7,7 @@
 </body>
 
 <template name="main">
-	{{> navbar}}
+	{{!> navbar}}
 	<section id="home">
 		{{> home}}
 	</section>
@@ -18,14 +18,27 @@
 	<section id="rsvp">
 		{{> rsvp}}
 	</section>
-	{{#if guest.reply.feest}}
-	<section id="feest">
-		{{> feest}}
-	</section>
-	{{/if}}
 	{{#if guest.reply.ceremonie}}
 	<section id="ceremonie">
-		{{> ceremonie}}
+		<div class="container">
+			<h1>Ceremonie</h1>
+			<p>Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</o>
+		</div>
+		<div class="continue">
+			<center>
+				{{#if guest.reply.feest}}
+					<a href="#feest">Feest</a>
+				{{/if}}
+			</center>
+		</div>
+	</section>
+	{{/if}}
+	{{#if guest.reply.feest}}
+	<section id="feest">
+		<div class="container">
+			<h1>Feest</h1>
+			<p>Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>
+		</div>
 	</section>
 	{{/if}}
 	<footer></footer>
@@ -62,6 +75,11 @@
 		<div class="row">
 			<div id="masthead" class="span12"></div>
 		</div>
+		<div class="continue">
+			<center>
+				<a href="#rsvp">RSVP</a>
+			</center>
+		</div>
 	</div>
 </template>
 
@@ -70,11 +88,12 @@
 		<div class="page-head">
 			<h1>RSVP</h1>
 		</div>
-		{{#if replied}}
-			<button id="edit-reply-btn" class="btn">Aanpassen</button>
+		{{#if saved}}
+			<p>Super, bedankt voor het invullen en hopelijk tot de 19e!</p>
 		{{else}}
-			{{#if saved}}
-				<p>Super, bedankt voor het invullen en hopelijk tot de 19e!</p>
+			{{#if replied}}
+				<p>We hebben je RSVP al ontvangen, klik op Aanpassen om deze te veranderen.</p>
+				<button id="edit-reply-btn" class="btn">Aanpassen</button>
 			{{else}}
 				{{#if guest}}
 					{{> rsvp_reply}}
@@ -83,16 +102,60 @@
 				{{/if}}
 			{{/if}}
 		{{/if}}
+
+		{{!> rsvp_add}}
+
+		<div class="continue">
+			<center>
+				{{#if guest.reply.ceremonie}}
+					<a href="#ceremonie">Ceremonie</a>
+				{{else}}
+					{{#if guest.reply.feest}}
+						<a href="#feest">Feest</a>
+					{{/if}}
+				{{/if}}
+			</center>
+		</div>
+	</div>
+</template>
+
+<template name="rsvp_add">
+	<div id="add-form">
+		<input type="text" name="name" />
+		<input type="text" name="zipcode" />
+		<input type="text" name="number" />
+		<input type="text" name="n" />
+		<button id="add-btn">Toevoegen</button>
+	</div>
+	<div id="guest-list">
+		<h2>Gastenlijst</h2>
+		<table>
+		{{#each guests}}
+			<tr>
+				<td>{{name}}</td>
+				<td>{{zipcode}}</td>
+				<td>{{number}}</td>
+				<td>{{n}}</td>
+				<td>
+					{{#with reply}}
+						{{#if feest}}feest {{/if}}
+						{{#if ceremonie}}ceremonie {{/if}}
+						{{#if taart}}taart {{/if}}
+					{{/with}}
+				</td>
+			</tr>
+		{{/each}}
+		</table>
 	</div>
 </template>
 
 <template name="rsvp_identify">
 	<div id="identify-form">
 		<div id="zipcode-control" class="control-group{{#if error}} error{{/if}}">
-			<label for="" class="control-label">Vul je postcode en huisnummer in</label>
+			<label for="" class="control-label">Vul je postcode en huisnummer in om te beginnen</label>
 			<div class="controls">
 				<input type="text" id="zipcode-input" class="span2" placeholder="Postcode" />
-				<input type="text" id="number-input" class="span1" placeholder="Huisnummer" />
+				<input type="text" id="number-input" class="span1" placeholder="Nr." />
 				{{#if error}}
 					<span class="help-inline">{{error}}</span>
 				{{/if}}
@@ -141,19 +204,5 @@
 				<button id="reply-btn" class="btn btn-primary">Versturen</button>
 			</div>
 		</div>
-	</div>
-</template>
-
-<template name="ceremonie">
-	<div class="container">
-		<h1>Ceremonie</h1>
-		<p>Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</o>
-	</div>
-</template>
-
-<template name="feest">
-	<div class="container">
-		<h1>Feest</h1>
-		<p>Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>
 	</div>
 </template>
