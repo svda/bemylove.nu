@@ -31,6 +31,7 @@ var App = App || {};
       var taart = false;
       Guests.updateReply({
         ceremonie: ceremonie,
+        diner: diner,
         feest: feest,
         taart: taart
       });
