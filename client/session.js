@@ -61,7 +61,6 @@ var App = App || {};
       if(guestId) {
         var guest = Guests.searchGuest({ _id: guestId });
         App.Session.set('guest', guest);
-        console.log(guest);
       }
     });
 
