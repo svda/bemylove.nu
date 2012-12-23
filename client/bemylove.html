@@ -171,9 +171,17 @@
 			<input type="text" name="n" />
 			<button id="add-btn">Toevoegen</button>
 		</div>
-		<div id="guest-list">
+		<div id="guestlist">
 			<h2>Gastenlijst</h2>
 			<table>
+				<tr>
+					<th>Gast</th>
+					<th>Postcode</th>
+					<th>Huisnummer</th>
+					<th>Aantal</th>
+					<th>Uitgenodigd voor</th>
+					<th>bevestigd voor</th>
+				</tr>
 			{{#each guests}}
 				<tr data-id="{{_id}}">
 					<td>{{name}}</td>
@@ -182,15 +190,15 @@
 					<td>{{n}}</td>
 					<td>
 						{{#with invite}}
-							<label><input type="checkbox" name="invite_ceremonie" value="true"{{#if ceremonie}} checked="checked"{{/if}} /> Ceremonie</label>
-							<label><input type="checkbox" name="invite_diner" value="true"{{#if diner}} checked="checked"{{/if}} /> Diner</label>
-							<label><input type="checkbox" name="invite_feest" value="true"{{#if feest}} checked="checked"{{/if}} /> Feest</label>
+							<label class="checkbox"><input type="checkbox" name="invite_ceremonie" value="true"{{#if ceremonie}} checked="checked"{{/if}} /> Ceremonie</label>
+							<label class="checkbox"><input type="checkbox" name="invite_diner" value="true"{{#if diner}} checked="checked"{{/if}} /> Diner</label>
+							<label class="checkbox"><input type="checkbox" name="invite_feest" value="true"{{#if feest}} checked="checked"{{/if}} /> Feest</label>
 						{{/with}}
 					<td>
 						{{#with reply}}
-							{{#if ceremonie}}ceremonie {{/if}}
-							{{#if diner}}diner {{/if}}
-							{{#if feest}}feest {{/if}}
+							{{#if ceremonie}}Ceremonie<br />{{/if}}
+							{{#if diner}}Diner<br />{{/if}}
+							{{#if feest}}Feest{{/if}}
 						{{/with}}
 					</td>
 				</tr>
