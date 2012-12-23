@@ -12,10 +12,6 @@
 		<section id="home">
 			{{> home}}
 		</section>
-		<section id="construction">
-			<h1>soon in a theater near you!</h1>
-			<h2>(meer info volgt)</h2>
-		</section>
 		<section id="rsvp">
 			{{> rsvp}}
 		</section>
@@ -33,13 +29,6 @@
 						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437" style="color:#0000FF;text-align:left">Grotere kaart weergeven</a></small>
 					</div>
 				</div>
-			</div>
-			<div class="continue">
-				<center>
-					{{#if guest.reply.feest}}
-						<a href="#feest">Feest</a>
-					{{/if}}
-				</center>
 			</div>
 		</section>
 		{{/if}}
@@ -60,6 +49,11 @@
 			</div>
 		</section>
 		{{/if}}
+		<div id="continue">
+			<center>
+				<a href="#">Verder</a>
+			</center>
+		</div>
 		<footer>
 			{{!> logs_bootstrap}}
 		</footer>
@@ -68,15 +62,7 @@
 
 <template name="home">
 	<div class="container">
-		<p>Als je hier bent voor de bruiloft van Sander en Janneke dan zit je goed! Zo niet, dan ben je waarschijnlijk op zoek naar <a href"http://www.bemylove.nl" target="_blank">bemylove.nl</a></p>
-		<div class="row">
-			<div id="masthead" class="span12"></div>
-		</div>
-		<div class="continue">
-			<center>
-				<a href="#rsvp">RSVP</a>
-			</center>
-		</div>
+		<div id="masthead"></div>
 	</div>
 </template>
 
@@ -143,17 +129,6 @@
 
 		{{!> rsvp_add}}
 
-		<div class="continue">
-			<center>
-				{{#if guest.reply.ceremonie}}
-					<a href="#ceremonie">Ceremonie</a>
-				{{else}}
-					{{#if guest.reply.feest}}
-						<a href="#feest">Feest</a>
-					{{/if}}
-				{{/if}}
-			</center>
-		</div>
 	</div>
 </template>
 

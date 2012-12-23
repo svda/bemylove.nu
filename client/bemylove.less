@@ -14,6 +14,7 @@ section {
 	position: relative;
 	width: 100%;
 	min-height: 100%;
+	margin-bottom: 40px;
 }
 
 iframe {
@@ -24,15 +25,15 @@ iframe {
 #viewport {
 	width: 100%;
 	height: 100%;
-	//overflow: hidden;
+	//overflow: auto;
 }
 
 .control-label {
 	font-weight: bold;
 }
 
-.continue {
-	position: absolute;
+#continue {
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -44,12 +45,15 @@ iframe {
 		height: 100px;
 		margin-bottom: 10px;
 		text-indent: -9999em;
-		background: url('/images/continue.png') center center no-repeat;
+		background: url('/images/continue.png') center top no-repeat;
 		background-size: cover;
 		opacity: .5;
 		&:hover {
 			opacity: 1;
 		}
+	}
+	a.last {
+		background-position: 0 -100px;
 	}
 }
 
@@ -58,7 +62,9 @@ iframe {
 }
 
 #masthead {
-	height: 940px;
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
 	background: url('/images/body_bg.jpg') center center no-repeat;
 	background-size: cover;
 }
