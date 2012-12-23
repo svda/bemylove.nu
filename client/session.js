@@ -10,6 +10,7 @@ var App = App || {};
 
   var VALID_KEYS = [
     'guest',
+    'identify_error',
     'reply_error'
   ];
 

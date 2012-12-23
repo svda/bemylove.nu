@@ -125,13 +125,13 @@
 					</div>
 				{{else}}
 					<div id="identify-form">
-						<div id="zipcode-control" class="control-group{{#if error}} error{{/if}}">
+						<div id="zipcode-control" class="control-group{{#if identify_error}} error{{/if}}">
 							<label for="" class="control-label">Vul je postcode en huisnummer in om te beginnen</label>
 							<div class="controls">
 								<input type="text" id="zipcode-input" class="span2" placeholder="Postcode" />
 								<input type="text" id="number-input" class="span1" placeholder="Nr." />
-								{{#if error}}
-									<span class="help-inline">{{error}}</span>
+								{{#if identify_error}}
+									<span class="help-inline">{{identify_error}}</span>
 								{{/if}}
 							</div>
 						</div>

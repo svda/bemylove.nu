@@ -43,11 +43,10 @@ var App = App || {};
       var number = $('#number-input').val();
       var guest = App.Guests.searchGuest({ zipcode: zipcode, number: number });
       if(guest)
-      {
         App.Guests.persistGuest(guest);
-      }
-      else
+      else {
         App.Session.set('identify_error', 'Sorry, geen gasten met deze gegevens gevonden. Wil je de postcode zonder spaties invullen, en het huisnummer zonder toevoegingen?');
+      }
     },
     'click #reply-btn': function (e) {
       e.preventDefault();
@@ -63,7 +62,7 @@ var App = App || {};
       App.Session.state('rsvp_saved');
     },
     'click #zipcode-input': function (e) {
-      App.Session.set('reply_error', null);
+      App.Session.set('identify_error', null);
     },
     'click #edit-reply-btn': function (e) {
       App.Session.state('rsvp_reply');
@@ -81,8 +80,8 @@ var App = App || {};
     return false;
   }
 
-  Template.rsvp.error = function () {
-    return Session.get('identify_error');
+  Template.rsvp.identify_error = function () {
+    return App.Session.get('identify_error');
   };
 
   Template.rsvp.aantal = function () {
