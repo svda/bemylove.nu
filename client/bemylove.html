@@ -8,60 +8,62 @@
 </body>
 
 <template name="main">
-	<section id="home">
-		{{> home}}
-	</section>
-	<section id="construction">
-		<h1>soon in a theater near you!</h1>
-		<h2>(meer info volgt)</h2>
-	</section>
-	<section id="rsvp">
-		{{> rsvp}}
-	</section>
-	{{#if guest.reply.ceremonie}}
-	<section id="ceremonie">
-		<div class="container">
-			<h1>Ceremonie</h1>
-			<p>Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</p>
-			<p><strong>Opstappen op de aluminium steiger tegenover het Bimhuis</strong><br />
-				Piet Heinkade 3<br />
-				1019 BR Amsterdam
-			</p>
-			<div class="row">
-				<div class="span12">
-					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437" style="color:#0000FF;text-align:left">Grotere kaart weergeven</a></small>
+	<div id="viewport">
+		<section id="home">
+			{{> home}}
+		</section>
+		<section id="construction">
+			<h1>soon in a theater near you!</h1>
+			<h2>(meer info volgt)</h2>
+		</section>
+		<section id="rsvp">
+			{{> rsvp}}
+		</section>
+		{{#if guest.reply.ceremonie}}
+		<section id="ceremonie">
+			<div class="container">
+				<h1>Ceremonie</h1>
+				<p>Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</p>
+				<p><strong>Opstappen op de aluminium steiger tegenover het Bimhuis</strong><br />
+					Piet Heinkade 3<br />
+					1019 BR Amsterdam
+				</p>
+				<div class="row">
+					<div class="span12">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437" style="color:#0000FF;text-align:left">Grotere kaart weergeven</a></small>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="continue">
-			<center>
-				{{#if guest.reply.feest}}
-					<a href="#feest">Feest</a>
-				{{/if}}
-			</center>
-		</div>
-	</section>
-	{{/if}}
-	{{#if guest.reply.feest}}
-	<section id="feest">
-		<div class="container">
-			<h1>Feest</h1>
-			<p>Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>
-			<p><strong>CMA Gebouw</strong><br />
-				Paradijsplein 1<br />
-				1093 NJ Amsterdam<br />
-			</p>
-			<div class="row">
-				<div class="span12">
-					<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;source=embed">Grotere kaart weergeven</a></small>
+			<div class="continue">
+				<center>
+					{{#if guest.reply.feest}}
+						<a href="#feest">Feest</a>
+					{{/if}}
+				</center>
+			</div>
+		</section>
+		{{/if}}
+		{{#if guest.reply.feest}}
+		<section id="feest">
+			<div class="container">
+				<h1>Feest</h1>
+				<p>Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>
+				<p><strong>CMA Gebouw</strong><br />
+					Paradijsplein 1<br />
+					1093 NJ Amsterdam<br />
+				</p>
+				<div class="row">
+					<div class="span12">
+						<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;source=embed">Grotere kaart weergeven</a></small>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	{{/if}}
-	<footer>
-		{{!> logs_bootstrap}}
-	</footer>
+		</section>
+		{{/if}}
+		<footer>
+			{{!> logs_bootstrap}}
+		</footer>
+	</div>
 </template>
 
 <template name="home">
@@ -80,9 +82,7 @@
 
 <template name="rsvp">
 	<div class="container">
-		<div class="page-head">
-			<h1>RSVP</h1>
-		</div>
+		<h1>RSVP</h1>
 		{{#if saved}}
 			<p>Super, bedankt voor het invullen en hopelijk tot de 19e {{guest.name}}!</p>
 			<button id="edit-reply-btn" class="btn">Aanpassen</button>
