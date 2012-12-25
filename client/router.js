@@ -7,7 +7,6 @@ var App = App || {};
       "beheer": "admin"
     },
     admin: function () {
-      console.log('ok');
       App.Session.state('admin');
     }
   });
