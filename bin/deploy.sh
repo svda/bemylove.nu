@@ -1,6 +1,16 @@
 #!/bin/bash
+#
+# Basic deployment script. For now the script assumes that your git project is
+# in a folder relative to the home directory and has the same name as the
+# deployment server you connect to.
+#
+# Set the DEPLOY_KEY environment variable if you want to specify an SSH key to
+# connect with.
 
-SERVER=$1
+PROJECT='bemylove.nu'
+
+REMOTE=$1
 BRANCH=$2
-git push $SERVER $BRANCH
-ssh -i ./.ssh/c2o_aws.pem ec2-user@$SERVER "cd $SERVER; git pull;"
+
+git push $REMOTE $BRANCH
+ssh -i $DEPLOY_KEY ec2-user@$PROJECT "cd $PROJECT; git pull $REMOTE $BRANCH;"

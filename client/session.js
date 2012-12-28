@@ -51,7 +51,6 @@ var App = App || {};
       }
       validateState(state);
       Session.set(KEY_PREFIX + 'state', state);
-      console.log('Set state to ' + state);
     }
   }
 

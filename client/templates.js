@@ -19,7 +19,7 @@ var App = App || {};
       if(guest)
         Guests.persistGuest(guest);
       else {
-        App.Session.set('identify_error', 'Sorry, geen gasten met deze gegevens gevonden. Wil je de postcode zonder spaties invullen, en het huisnummer zonder toevoegingen?');
+        App.Session.set('identify_error', true);
       }
     },
     'click #reply-btn': function (e) {

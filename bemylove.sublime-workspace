@@ -12,10 +12,13 @@
 	"buffers":
 	[
 		{
+			"contents": "<head>\n  <title>bemylove.nu</title>\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n</head>\n\n<body>\n  {{> main}}\n</body>\n\n<template name=\"main\">\n	<div id=\"viewport\">\n		<section id=\"home\">\n			{{> home}}\n		</section>\n		<section id=\"rsvp\">\n			{{> rsvp}}\n		</section>\n		{{#if guest.reply.ceremonie}}\n		<section id=\"ceremonie\">\n			<div class=\"container\">\n				<h1>Ceremonie</h1>\n				<p class=\"lead\">Leuk, je komt naar de ceremonie. Hier vind je de belangrijkste gegevens.</p>\n				<p><strong>Adres</strong><br />\n					Bimhuis/Muziekgebouw aan het IJ<br />\n					Piet Heinkade 1-5<br />\n					1019 BR Amsterdam\n				</p>\n				<strong>Belangrijk</strong>\n				<ul>\n					<li>Opstappen op de aluminium steiger pal naast het Bimhuis (het zwarte gebouw). De boot heet 'Het wapen van Amsterdam'.</li>\n					<li>Vanaf 13:45 kun je de boot op. Ben je eerder, dan kun je wachten in café De Zoutkeet in het Muziekgebouw.</li>\n					<li>De boot vertrekt stipt om 14:00. Zorg dus dat je op tijd aanwezig bent.</li>\n				</ul>\n				<p><strong>Met het openbaar vervoer</strong><br />\n					Als je met het openbaar vervoer komt kun je het beste naar Amsterdam Centraal komen en vanaf daar tram 26 richting IJburg pakken.\n					Stap vervolgens uit bij halte Bimhuis/Muziekgebouw.</p>\n				<p><strong>Met de auto</strong><br />\n					Parkeergelegenheid is er in de parkeergarage onder het Bimhuis, zie voor informatie en tarieven op deze <a href=\"http://www.muziekgebouw.nl/contact/Parkeren/\" target=\"_blank\">website</a>.<br />\n					Een voordeliger alternatief zijn de <a href=\"http://www.amsterdam.nl/parkeren-verkeer/parkeren/item-/penr/p_r_zeeburg_i_en_ii/\" target=\"_blank\">P+R parkeerplaatsen op Zeeburg</a>. \n					Als u bij de P+R parkeert, krijgt u OV-kaartjes mee (5 stuks). Vanaf de parkeerplaats bent u met tramlijn 26 (richting Centraal Station) binnen 7 minuten bij halte Bimhuis/Muziekgebouw. Als u teruggaat naar de auto pakt u bij het Bimhuis weer tram 26 (ditmaal richting IJburg) en stapt u uit bij halte Zuiderzeeweg.</p>\n				<div class=\"row\">\n					<div class=\"span12\">\n						<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=bimhuis+amsterdam&amp;aq=&amp;sll=52.358029,4.935286&amp;sspn=0.009999,0.018926&amp;gl=nl&amp;g=Paradijsplein,+Amsterdam&amp;ie=UTF8&amp;hq=bimhuis&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.378224,4.913074&amp;spn=0.019989,0.037851&amp;t=m&amp;z=14&amp;iwloc=A&amp;cid=3783058251908802437\" style=\"color:#0000FF;text-align:left\">Grotere kaart weergeven</a></small>\n					</div>\n				</div>\n			</div>\n		</section>\n		{{/if}}\n		{{#if guest.reply.diner}}\n		<section id=\"diner\">\n			<div class=\"container\">\n				<h1>Diner</h1>\n				<p class=\"lead\">Leuk, je komt naar het diner. Hier vind je de belangrijkste gegevens.</o>\n				<p><strong>Adres</strong><br />\n					Bij Sander en Janneke thuis<br />\n					Eerste Oosterparkstraat 100 I<br />\n					1091 HE Amsterdam<br />\n				</p>\n				<strong>Belangrijk</strong>\n				<ul>\n					<li>Het diner begint om 17:30</li>\n					<LI>Heb je speciale dieetwensen? Laat dit op uiterlijk 10 januari aan de <a href=\"mailto:ceremoniemeester@bemylove.nu\">ceremoniemeester</a> weten.</li>\n				</ul>\n			</div>\n		</section>\n		{{/if}}\n		{{#if guest.reply.feest}}\n		<section id=\"feest\">\n			<div class=\"container\">\n				<h1>Feest</h1>\n				<p class=\"lead\">Leuk, je komt naar het feest. Hier vind je de belangrijkste gegevens.</o>\n				<p><strong>Adres</strong><br />\n					CMA Gebouw<br />\n					Paradijsplein 1<br />\n					1093 NJ Amsterdam<br />\n				</p>\n				<p><strong>Met het openbaar vervoer</strong><br />\n					Als je met het openbaar vervoer komt kun je het beste naar NS station Amsterdam Muiderpoort komen, vanaf daar ligt de feestlocatie op loopafstand. <br />\n					Zie voor een deur-tot-deur routebeschrijving 9292ov.nl\n				</p>\n				<p><strong>Met de auto</strong><br />\n					Het CMA-gebouw beschikt over een prive-parkeerplaats, waar gratis geparkeerd kan worden. Deze parkeerplaats ligt achter het gebouw, er zal een parkeermannetje aanwezig zijn om je het hek binnen te laten.\n				</p>\n\n				<strong>Opmerkingen</strong>\n				<ul>\n					<li>Het feest begint om 20:30.</li>\n					<li>Wij hebben als thema voor de bruiloft 'vintage chic' jaren '20 tot jaren '40 gekozen. De (vrijblijvende) dresscode is daarom Roaring twenties tot Swinging fourties.</li>\n				</ul>\n				<div class=\"row\">\n					<div class=\"span12\">\n						<iframe frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;output=embed\"></iframe><br /><small><a href=\"http://maps.google.nl/maps?q=paradijsplein+1+amsterdam&amp;ie=UTF8&amp;hq=&amp;hnear=Paradijsplein,+Watergraafsmeer,+Amsterdam,+Noord-Holland&amp;gl=nl&amp;t=m&amp;z=14&amp;ll=52.357821,4.932604&amp;source=embed\">Grotere kaart weergeven</a></small>\n					</div>\n				</div>\n			</div>\n		</section>\n		{{/if}}\n		{{#if guest}}\n		<section id=\"envelop\">\n			<div class=\"container\">\n				<h1>Het envelopje</h1>\n				<p>Na ruim 6 jaar samenwonen hebben wij de hele huisraad al verzameld.<br />\n				   maar we zijn aan het sparen voor een fietsreis op Cuba.\n				</p>\n			</div>\n		</section>\n		{{/if}}\n		{{#if admin}}\n		<section id=\"admin\">\n			{{> admin}}\n		</section>\n		{{/if}}\n		<div id=\"continue\">\n			<center>\n				<a href=\"#\">Verder</a>\n			</center>\n		</div>\n		<footer>\n			{{!> logs_bootstrap}}\n		</footer>\n	</div>\n</template>\n\n<template name=\"home\">\n	<div class=\"container\">\n		<div id=\"masthead\"></div>\n	</div>\n</template>\n\n<template name=\"rsvp\">\n	<div class=\"container\">\n		<h1>RSVP</h1>\n		{{#if saved}}\n			<p>Super, bedankt voor het invullen en tot de 19e {{guest.name}}!</p>\n			<button id=\"edit-reply-btn\" class=\"btn\">Aanpassen</button>\n		{{else}}\n			{{#if replied}}\n			<p>Hallo {{guest.name}},</p>\n				<p>We hebben de RSVP al ontvangen, klik op Aanpassen om deze te veranderen.</p>\n				<button id=\"edit-reply-btn\" class=\"btn\">Aanpassen</button>\n			{{else}}\n				{{#if guest}}\n					<div id=\"reply-form\">\n						<p>Hallo {{guest.name}}!</p>\n						<div class=\"control-group\">\n							<label  class=\"control-label\">Wil je aangeven of je komt?</label>\n							<div class=\"controls\">\n								{{#if guest.invite.ceremonie}}\n									<label class=\"checkbox\">\n										<input type=\"checkbox\" name=\"reply_ceremonie\" value=\"true\"{{#if guest.reply.ceremonie}} checked=\"checked\"{{/if}} /> Ja, ik kom naar de ceremonie\n									</label>\n								{{/if}}\n								{{#if guest.invite.diner}}\n									<label class=\"checkbox\">\n										<input type=\"checkbox\" name=\"reply_diner\" value=\"true\"{{#if guest.reply.diner}} checked=\"checked\"{{/if}} /> Ja, ik kom naar het diner\n									</label>\n								{{/if}}\n								{{#if guest.invite.feest}}\n									<label class=\"checkbox\">\n										<input type=\"checkbox\" name=\"reply_feest\" value=\"true\"{{#if guest.reply.feest}} checked=\"checked\"{{/if}} /> Ja, ik kom naar het feest\n									</label>\n								{{/if}}\n							</div>\n						</div>\n						<div class=\"control-group\">\n							<label  class=\"control-label\">Met hoeveel personen?</label>\n							<div class=\"controls\">\n								<label>\n									<select name=\"ceremonie\" class=\"span1\">\n										{{# each aantal}}\n										<option value=\"{{aantal}}\" selected=\"selected\">{{this}}</option>\n										{{/each}}\n									</select>\n								</label>\n							</div>\n						</div>\n						<div class=\"control-group\">\n								<button id=\"reply-btn\" class=\"btn btn-primary\">Versturen</button>\n							</div>\n						</div>\n					</div>\n				{{else}}\n					<div id=\"identify-form\">\n						<div id=\"zipcode-control\" class=\"control-group{{#if identify_error}} error{{/if}}\">\n							<label for=\"\" class=\"control-label\">Vul je postcode en huisnummer in om te beginnen</label>\n							<div class=\"controls\">\n								<input type=\"text\" id=\"zipcode-input\" class=\"span2\" placeholder=\"Postcode\" />\n								<input type=\"text\" id=\"number-input\" class=\"span1\" placeholder=\"Nr.\" />\n								{{#if identify_error}}\n									<span class=\"help-inline\">{{identify_error}}</span>\n								{{/if}}\n							</div>\n						</div>\n							<button id=\"identify-btn\" class=\"btn btn-primary\">Versturen</button>\n					</div>\n				{{/if}}\n			{{/if}}\n		{{/if}}\n\n	</div>\n</template>\n\n<template name=\"admin\">\n	<div class=\"container\">\n		<h1>Beheer gastenlijst</h1>\n		<div id=\"guestlist\">\n			<h2>Gastenlijst</h2>\n			<table>\n				<tr>\n					<th>Gast</th>\n					<th>Postcode</th>\n					<th>Huisnummer</th>\n					<th>Aantal</th>\n					<th>Uitgenodigd voor</th>\n					<th>bevestigd voor</th>\n				</tr>\n			{{#each guests}}\n				<tr data-id=\"{{_id}}\">\n					<td>{{name}}</td>\n					<td>{{zipcode}}</td>\n					<td>{{number}}</td>\n					<td>{{n}}</td>\n					<td>\n						{{#with invite}}\n							<label class=\"checkbox\"><input type=\"checkbox\" name=\"invite_ceremonie\" value=\"true\"{{#if ceremonie}} checked=\"checked\"{{/if}} /> Ceremonie</label>\n							<label class=\"checkbox\"><input type=\"checkbox\" name=\"invite_diner\" value=\"true\"{{#if diner}} checked=\"checked\"{{/if}} /> Diner</label>\n							<label class=\"checkbox\"><input type=\"checkbox\" name=\"invite_feest\" value=\"true\"{{#if feest}} checked=\"checked\"{{/if}} /> Feest</label>\n						{{/with}}\n					<td>\n						{{#with reply}}\n							{{#if ceremonie}}Ceremonie<br />{{/if}}\n							{{#if diner}}Diner<br />{{/if}}\n							{{#if feest}}Feest{{/if}}\n						{{/with}}\n					</td>\n				</tr>\n			{{/each}}\n			</table>\n		</div>\n		<div id=\"add-form\">\n			<input type=\"text\" name=\"name\" placeholder=\"Naam\" />\n			<input type=\"text\" name=\"zipcode\" placeholder=\"Postcode zonder spaties\" />\n			<input type=\"text\" name=\"number\" placeholder=\"Huisnummer zonder toevoegingen\" />\n			<input type=\"text\" name=\"n\" placeholder=\"Aantal personen\" /><br />\n			<button id=\"add-btn\" class=\"btn\">Toevoegen</button>\n		</div>\n	</div>\n</template>\n\n",
 			"file": "client/bemylove.html",
+			"file_size": 10332,
+			"file_write_time": 1356433162000000,
 			"settings":
 			{
-				"buffer_size": 7690,
+				"buffer_size": 10336,
 				"line_ending": "Unix"
 			}
 		},
@@ -23,7 +26,7 @@
 			"file": "client/router.js",
 			"settings":
 			{
-				"buffer_size": 339,
+				"buffer_size": 314,
 				"line_ending": "Unix"
 			}
 		},
@@ -39,7 +42,7 @@
 			"file": "client/session.js",
 			"settings":
 			{
-				"buffer_size": 1467,
+				"buffer_size": 1423,
 				"line_ending": "Unix"
 			}
 		},
@@ -47,7 +50,7 @@
 			"file": "client/bemylove.less",
 			"settings":
 			{
-				"buffer_size": 1299,
+				"buffer_size": 1338,
 				"line_ending": "Unix"
 			}
 		},
@@ -300,6 +303,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"caf",
 			"saved",
 			"App.Gue",
 			"reply_er",
@@ -426,8 +430,7 @@
 			"path-design",
 			"path",
 			"#topmenu-design",
-			"columns-",
-			"thumb"
+			"columns-"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -450,7 +453,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -458,15 +461,15 @@
 					"file": "client/bemylove.html",
 					"settings":
 					{
-						"buffer_size": 7690,
+						"buffer_size": 10336,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7316,
-								7316
+								8870,
+								8870
 							]
 						],
 						"settings":
@@ -563,7 +566,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2665.0,
+						"translation.y": 2901.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -573,15 +576,15 @@
 					"file": "client/router.js",
 					"settings":
 					{
-						"buffer_size": 339,
+						"buffer_size": 314,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								172,
-								172
+								147,
+								147
 							]
 						],
 						"settings":
@@ -696,8 +699,8 @@
 						"selection":
 						[
 							[
-								2320,
-								2320
+								2713,
+								2719
 							]
 						],
 						"settings":
@@ -795,7 +798,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 426.0,
+						"translation.y": 816.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -805,15 +808,15 @@
 					"file": "client/session.js",
 					"settings":
 					{
-						"buffer_size": 1467,
+						"buffer_size": 1423,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								124,
-								124
+								1155,
+								1155
 							]
 						],
 						"settings":
@@ -911,7 +914,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 149.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -921,15 +924,15 @@
 					"file": "client/bemylove.less",
 					"settings":
 					{
-						"buffer_size": 1299,
+						"buffer_size": 1338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1132,
-								1132
+								1336,
+								1336
 							]
 						],
 						"settings":
@@ -1026,7 +1029,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1045.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1137,7 +1140,9 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1321,7 +1326,7 @@
 		[
 			[
 				"",
-				"/Users/sander/var/www/prodemos.nl/prodemos.sublime-project"
+				"/Users/sander/var/www/olvg.nl/olvg.sublime-project"
 			]
 		],
 		"width": 380.0
