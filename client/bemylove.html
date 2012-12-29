@@ -183,13 +183,11 @@
 								<div class="control-group">
 									<label  class="control-label">Met hoeveel personen?</label>
 									<div class="controls">
-										<label>
-											<select name="ceremonie" class="span1">
-												{{# each aantal}}
-												<option value="{{aantal}}" selected="selected">{{this}}</option>
-												{{/each}}
-											</select>
-										</label>
+										<select name="reply_aantal" class="span1">
+											{{#each aantal}}
+											<option value="{{this}}" selected="selected">{{this}}</option>
+											{{/each}}
+										</select>
 									</div>
 								</div>
 								<div class="control-group">
@@ -249,7 +247,8 @@
 						{{#with reply}}
 							{{#if ceremonie}}Ceremonie<br />{{/if}}
 							{{#if diner}}Diner<br />{{/if}}
-							{{#if feest}}Feest{{/if}}
+							{{#if feest}}Feest{{/if}}<br />
+							{{#if aantal}}{{aantal}} personen{{/if}}
 						{{/with}}
 					</td>
 				</tr>

@@ -27,12 +27,13 @@ var App = App || {};
       var ceremonie = $('input[name="reply_ceremonie"]').is(':checked');
       var diner = $('input[name="reply_diner"]').is(':checked');
       var feest = $('input[name="reply_feest"]').is(':checked');
-      //var taart = $('input[name="taart"]:checked').val();
+      var aantal = $('select[name="reply_aantal"]').val();
       var taart = false;
       Guests.updateReply({
         ceremonie: ceremonie,
         diner: diner,
         feest: feest,
+        n: aantal,
         taart: taart
       });
       App.Session.state('rsvp_saved');
@@ -68,6 +69,10 @@ var App = App || {};
       n.push(i);
     }
     return n;
+  };
+
+  Template.rsvp.equal = function (a, b) {
+    return a == b;
   };
 
   Template.admin.guests = function () {
