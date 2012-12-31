@@ -5,7 +5,10 @@
 			"path": "/Users/sander/var/www/meteor/bemylove.nu"
 		},
 		{
-			"path": "/Users/sander/var/www/meteor/master/packages"
+			"path": "/Users/sander/var/www/meteor/packages"
+		},
+		{
+			"path": "/Users/sander/var/www/meteor/master"
 		}
 	]
 }

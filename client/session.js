@@ -56,11 +56,15 @@ var App = App || {};
 
   Meteor.startup(function () {
 
-    Meteor.autorun(function () {
+    Meteor.autorun(function (handle) {
       var guestId = $.cookie('guest_id');
       if(guestId) {
         var guest = Guests.searchGuest({ _id: guestId });
-        App.Session.set('guest', guest);
+        if(guest) {
+          App.Session.set('guest', guest);
+          Meteor.call('/guests/login', guest._id);
+          handle.stop();
+        }
       }
     });
 

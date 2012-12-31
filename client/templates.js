@@ -16,8 +16,10 @@ var App = App || {};
       var zipcode = $('#zipcode-input').val().toUpperCase();
       var number = $('#number-input').val();
       var guest = Guests.searchGuest({ zipcode: zipcode, number: number });
-      if(guest)
+      if(guest) {
         Guests.persistGuest(guest);
+        Meteor.call('/guests/login', guest._id);
+      }
       else {
         App.Session.set('identify_error', true);
       }

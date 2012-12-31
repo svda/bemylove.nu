@@ -13,7 +13,7 @@ _.extend( Guests, {
   },
 
   searchGuest: function (properties) {
-    if(_.keys(properties).length) // We need this because otherwise the first row will be returned.
+    if(_.keys(properties).length) // We need this because otherwise the first row will always be returned.
       return Guests.findOne(properties);
     return false;
   },
@@ -23,3 +23,4 @@ _.extend( Guests, {
     App.Session.set('guest', guest);
   }
 });
+
