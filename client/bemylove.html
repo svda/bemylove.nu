@@ -150,13 +150,13 @@
 				<h1>RSVP</h1>
 				{{#if saved}}
 					<p>Super, bedankt voor het invullen en tot de 19e {{guest.name}}!</p>
-					<button id="edit-reply-btn" class="btn">Aanpassen</button>
+					<p><button id="edit-reply-btn" class="btn">Aanpassen</button></p>
 					<p>Klik op de pijl hieronder of scroll naar beneden om verder te gaan.</p>
 				{{else}}
 					{{#if replied}}
 					<p>Hallo {{guest.name}},</p>
 						<p>We hebben de RSVP al ontvangen, klik op Aanpassen om deze te veranderen.</p>
-						<button id="edit-reply-btn" class="btn">Aanpassen</button>
+						<p><button id="edit-reply-btn" class="btn">Aanpassen</button></p>
 						<p>Klik op de pijl hieronder of scroll naar beneden om verder te gaan.</p>
 					{{else}}
 						{{#if guest}}
