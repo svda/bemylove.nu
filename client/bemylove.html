@@ -257,7 +257,7 @@
 					<td>{{zipcode}}</td>
 					<td>{{number}}</td>
 					<td>{{n}}</td>
-					<td>
+					<td class="invite">
 						{{#with invite}}
 							<label class="checkbox"><input type="checkbox" name="invite_ceremonie" value="true"{{#if ceremonie}} checked="checked"{{/if}} /> Ceremonie</label>
 							<label class="checkbox"><input type="checkbox" name="invite_diner" value="true"{{#if diner}} checked="checked"{{/if}} /> Diner</label>
@@ -265,11 +265,11 @@
 						{{/with}}
 					</td>
 					<td>{{#if replied}}ja{{else}}nee{{/if}}
-					<td>
+					<td class="reply">
 						{{#with reply}}
-							{{#if ceremonie}}Ceremonie<br />{{/if}}
-							{{#if diner}}Diner<br />{{/if}}
-							{{#if feest}}Feest{{/if}}<br />
+							<label class="checkbox"><input type="checkbox" name="reply_ceremonie" value="true"{{#if ceremonie}} checked="checked"{{/if}} /> Ceremonie</label>
+							<label class="checkbox"><input type="checkbox" name="reply_diner" value="true"{{#if diner}} checked="checked"{{/if}} /> Diner</label>
+							<label class="checkbox"><input type="checkbox" name="reply_feest" value="true"{{#if feest}} checked="checked"{{/if}} /> Feest</label>
 							{{#if n}}{{n}} personen{{/if}}
 						{{/with}}
 					</td>

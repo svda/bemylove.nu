@@ -4,7 +4,7 @@
 
     Guests.allow({
       insert: function () { return isAdmin() },
-      update: function (userId, docs) { return isAdmin() || isOwner(docs) },
+      update: function (userId, docs) { return isOwner(docs) || isAdmin() },
       remove: function () { return isAdmin() }
     });
 
@@ -21,7 +21,7 @@
   function isAdmin () {
     var guest = Guests.searchGuest({ _id: Meteor.userId() });
     if(guest)
-      return guest.zipcode == '1091HE';
+      return guest.zipcode == '1091HE' || '1094JX';
     return false;
   }
 

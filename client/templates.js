@@ -82,7 +82,7 @@ var App = App || {};
   }
 
   Template.admin.events = {
-    'click tr input': function (e) {
+    'click td.invite input': function (e) {
       var row = $(e.target).parent().parent().parent();
       var id = row.data('id');
       Guests.update({
@@ -94,6 +94,23 @@ var App = App || {};
             diner: row.find('input[name="invite_diner"]').is(':checked'),
             feest: row.find('input[name="invite_feest"]').is(':checked')
           }
+        }
+      }, function (error) {
+        if(error)
+          console.log(error);
+      })
+      Meteor.flush();
+    },
+    'click td.reply input': function (e) {
+      var row = $(e.target).parent().parent().parent();
+      var id = row.data('id');
+      Guests.update({
+        _id: id
+      }, {
+        $set: {
+          'reply.ceremonie': row.find('input[name="reply_ceremonie"]').is(':checked'),
+          'reply.diner': row.find('input[name="reply_diner"]').is(':checked'),
+          'reply.feest': row.find('input[name="reply_feest"]').is(':checked')
         }
       }, function (error) {
         if(error)
