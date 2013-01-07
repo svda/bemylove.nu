@@ -21,7 +21,7 @@
   function isAdmin () {
     var guest = Guests.searchGuest({ _id: Meteor.userId() });
     if(guest)
-      return guest.zipcode == '1091HE' || '1094JX';
+      return guest.zipcode == '1091HE' || '1094JX' || '1051KW';
     return false;
   }
 
