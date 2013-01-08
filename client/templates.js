@@ -26,9 +26,9 @@ var App = App || {};
     },
     'click #reply-btn': function (e) {
       e.preventDefault();
-      var ceremonie = $('input[name="reply_ceremonie"]').is(':checked');
-      var diner = $('input[name="reply_diner"]').is(':checked');
-      var feest = $('input[name="reply_feest"]').is(':checked');
+      var ceremonie = $('#reply-form input[name="reply_ceremonie"]:checked').val() == 'true';
+      var diner = $('#reply-form input[name="reply_diner"]:checked').val() == 'true';
+      var feest = $('#reply-form input[name="reply_feest"]:checked').val() == 'true';
       var aantal = $('select[name="reply_aantal"]').val();
       var taart = false;
       Guests.updateReply({
